@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title></title>
+	<link href="site.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="section">
+		
+		<table>
+			<tr>
+				<td>Mainframe</td>
+				<td>
+					<select class="selectable" data-bind="main_frame">
+						<option value="default" >Default</option>
+						<option value="nostore">No Store</option>
+						<option value="cache">Cache</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Stylesheets</td>
+				<td>
+					<select class="selectable" data-bind="stylesheet">
+						<option value="default" >Default</option>
+						<option value="nostore">No Store</option>
+						<option value="cache">Cache</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Images</td>
+				<td>
+					<select class="selectable" data-bind="image">
+						<option value="default" >Default</option>
+						<option value="nostore">No Store</option>
+						<option value="cache">Cache</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Scripts</td>
+				<td>
+					<select class="selectable" data-bind="script">
+						<option value="default" >Default</option>
+						<option value="nostore">No Store</option>
+						<option value="cache">Cache</option>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Ajax</td>
+				<td>
+					<select class="selectable" data-bind="xmlhttprequest">
+						<option value="default" >Default</option>
+						<option value="nostore">No Store</option>
+						<option value="cache">Cache</option>
+					</select>
+				</td>
+			</tr>
+
+
+		</table>
+		<div>
+			<div class="save" id="saveButton">Save</div>
+		</div>
+	</div>
+	<script src="site.js"></script>
+</body>
+</html>

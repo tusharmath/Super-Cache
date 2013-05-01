@@ -1,0 +1,32 @@
+body {
+	font-family:tahoma;
+	font-size:12px;
+	background-color:rgb(238, 238, 238);
+	padding:0;
+	margin:0;
+}
+.section {
+	margin:12px 4px 12px 4px;
+}
+#saveButton {
+	border:solid 1px rgb(201, 164, 164);
+	border-radius:4px;
+	text-align:center;
+	padding:4px;
+	margin:4px;
+	color:rgb(46, 46, 46);
+	cursor:pointer;
+	background-color:rgb(241, 209, 209);
+}
+#saveButton:hover {
+	background-color:rgb(238, 194, 194);
+}
+#saveButton:active {
+	background-color:rgb(177, 162, 162);
+}
+
+table{
+	font-size:12px;
+	font-family:tahoma;
+
+}
