@@ -13,8 +13,13 @@ var _config = {
 			dest: _options.packageFile
 		}
 	},
+	release: {
+		options: {
+			npm: false
+		}
+	},
 	'string-replace': {
-		dist: {
+		manifest: {
 			files: [{
 				'./src/manifest.json': './src/manifest.template.json'
 			}],
@@ -23,10 +28,10 @@ var _config = {
 				replacements: [{
 					pattern: /\!\{version\}/g,
 					replacement: '<%= pkg.version %>'
-				},{
+				}, {
 					pattern: /\!\{name\}/g,
 					replacement: '<%= pkg.name %>'
-				},{
+				}, {
 					pattern: /\!\{description\}/g,
 					replacement: '<%= pkg.description %>'
 				}]
@@ -39,10 +44,10 @@ module.exports = function(grunt) {
 	grunt.initConfig(_config);
 	_config.pkg = grunt.file.readJSON('package.json');
 	grunt.loadNpmTasks('grunt-zip');
-
+	grunt.loadNpmTasks('grunt-release');
 	//grunt.loadNpmTasks('grunt-contrib-copy');
 	//grunt.loadNpmTasks('grunt-contrib-watch');
 	//grunt.loadNpmTasks('grunt-contrib-nodeunit');
 	grunt.loadNpmTasks('grunt-string-replace');
-	grunt.registerTask('default', ['zip']);
+	grunt.registerTask('publish', ['release', 'string-replace', 'zip']);
 };
