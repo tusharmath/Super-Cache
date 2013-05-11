@@ -1,7 +1,7 @@
 {
   "name": "Super-Cache",
   "description": "Helps in overriding cache policy",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "author": {
     "name": "Tushar Mathur <tusharmath@gmail.com>",
     "url": "http://tusharm.com"
@@ -14,11 +14,11 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-
     "grunt": "*",
     "grunt-zip": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-copy": "*",
-    "grunt-string-replace": "*"
+    "grunt-string-replace": "*",
+    "grunt-release": "*"
   }
 }
