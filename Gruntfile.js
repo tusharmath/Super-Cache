@@ -9,7 +9,7 @@ var _config = {
 
 	zip: {
 		createPackage: {
-			src: ['./src'],
+			src: ['./src/*/*','./src/*','!./src/manifest.template.json'],
 			dest: _options.packageFile
 		}
 	},
