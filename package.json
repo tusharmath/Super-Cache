@@ -1,0 +1,24 @@
+{
+  "name": "Super-Cache",
+  "description": "Helps in overriding cache policy",
+  "version": "1.1.9",
+  "author": {
+    "name": "Tushar Mathur <tusharmath@gmail.com>",
+    "url": "http://tusharm.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tusharmath/Super-Cache.git"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+
+    "grunt": "*",
+    "grunt-zip": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-string-replace": "*"
+  }
+}

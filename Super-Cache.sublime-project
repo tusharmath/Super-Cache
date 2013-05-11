@@ -1,7 +1,7 @@
 {
 	"folders": [{
 		"path": ".",
-		"folder_exclude_patterns": [".hgcheck"],
+		"folder_exclude_patterns": [".hgcheck", "node_modules", "bin"],
 		"file_exclude_patterns": ["*.sublime*"]
 	}]
 }

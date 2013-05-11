@@ -1,0 +1,28 @@
+{
+	"name": "!{name}",
+	"manifest_version": 2,
+	"version": "!{version}",
+	"description": "!{description}",
+	"permissions": [
+		"*://*/*",
+		"storage",
+		"webRequest",
+		"webRequestBlocking",
+		"tabs"],
+
+
+	"page_action": {
+		"default_title": "Super Cache",
+		"default_icon": "snapshots/cache_black.png",
+		"default_popup": "popup/index.html"
+	},
+
+	"background": {
+		"scripts": ["background/HostsDb.js",
+			"background/headersManipulator.js",
+			"background/SuperCacheLiveTabs.js",
+			"background/UtilKeys.js",
+			"background/ApplicationIcon.js",
+			"background/MainBackground.js"]
+	}
+}
