@@ -1,8 +1,8 @@
 {
-	"name": "!{name}",
+	"name": "Super-Cache",
 	"manifest_version": 2,
-	"version": "!{version}",
-	"description": "!{description}",
+	"version": "0.0.0",
+	"description": "Helps in overriding cache policy",
 	"permissions": [
 		"*://*/*",
 		"storage",
