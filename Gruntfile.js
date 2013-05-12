@@ -101,6 +101,8 @@ module.exports = function(grunt) {
 
 	});
 
-
-	//grunt.registerTask('publish', ['string-replace', 'zip']);
+	var publish_tasks = ['uglify', 'manifest_merge', 'string-replace', 'copy', 'zip'];
+	grunt.registerTask('publish-test', publish_tasks);
+	publish_tasks.push('release');
+	grunt.registerTask('publish', publish_tasks);
 };
