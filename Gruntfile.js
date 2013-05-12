@@ -26,7 +26,12 @@ var _config = {
 	uglify: {
 		dist: {
 			files: {
-				'./bin/src/background/bg.min.js': ['src/background/*.js'],
+				'./bin/src/background/bg.min.js': ["src/background/HostsDb.js",
+					"src/background/headersManipulator.js",
+					"src/background/SuperCacheLiveTabs.js",
+					"src/background/UtilKeys.js",
+					"src/background/ApplicationIcon.js",
+					"src/background/MainBackground.js"],
 				'./bin/src/popup/site.min.js': ['src/popup/*.js']
 			}
 		}
@@ -103,8 +108,9 @@ module.exports = function(grunt) {
 
 	});
 
-	var publish_tasks = ['uglify', 'manifest_merge', 'string-replace', 'copy', 'zip'];
-	grunt.registerTask('publish-test', publish_tasks);
-	publish_tasks.push('release');
-	grunt.registerTask('publish', publish_tasks);
+
+	grunt.registerTask('pack', ['uglify', 'manifest_merge', 'string-replace', 'copy', 'zip']);
+
+
+	grunt.registerTask('pack-release', ['uglify', 'manifest_merge', 'string-replace', 'copy', 'zip', 'release']);
 };
