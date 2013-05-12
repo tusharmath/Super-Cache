@@ -61,6 +61,8 @@ module.exports = function(grunt) {
 		srcContent.version = pkgContent.version;
 		srcContent.description = pkgContent.description;
 		srcContent.background.scripts = ['bg.min.js'];
+		srcContent.page_action.default_popup = 'index.html';
+
 		grunt.file.write(dest, JSON.stringify(srcContent));
 
 	});
