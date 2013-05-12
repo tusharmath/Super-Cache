@@ -37,6 +37,14 @@ var _config = {
 				}]
 			}
 		}
+	},
+	uglify: {
+		dist: {
+			files: {
+				'bin/src/bg.min.js': ['src/background/*.js'],
+				'bin/src/site.min.js': ['src/popup/*.js']
+			}
+		}
 	}
 };
 
@@ -48,6 +56,7 @@ module.exports = function(grunt) {
 	//grunt.loadNpmTasks('grunt-contrib-copy');
 	//grunt.loadNpmTasks('grunt-contrib-watch');
 	//grunt.loadNpmTasks('grunt-contrib-nodeunit');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-string-replace');
 	grunt.registerTask('publish', ['release', 'string-replace', 'zip']);
 };
