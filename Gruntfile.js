@@ -45,6 +45,23 @@ var _config = {
 				}]
 			}
 		}
+	},
+	copy: {
+		css_main: {
+			files: [{
+				expand: true,
+				src: ['./src/popup/*.css'],
+				dest: './bin/src/popup/',
+				flatten: true
+			}]
+		},
+		images: {
+			files: [{
+				expand: true,
+				src: ['./src/snapshots/*'],
+				dest: './bin'
+			}]
+		}
 	}
 };
 
