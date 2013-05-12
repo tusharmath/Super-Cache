@@ -118,8 +118,8 @@ var onHeadersReceived = function(response) {
 		case UTIL_KEYS.CACHECONTROL_TYPE.CACHE:
 
 			responseHeaders = hm.updateHeader(HeaderKeys.CACHE_CONTROL, [HeaderValues.HIGH_MAXAGE])
-				.updateHeader(HeaderKeys.EXPIRES, HeaderValues.FUTURE_DATE)
-				.updateHeader("ETag", "tushar.html")
+				//.updateHeader(HeaderKeys.EXPIRES, HeaderValues.FUTURE_DATE)
+				//.updateHeader("ETag", "tushar.html")
 				.getHeaders();
 
 			//responseHeaders = removeHeaders(responseHeaders, HeaderKeys.VARY);
