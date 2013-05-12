@@ -32,7 +32,19 @@ var _config = {
 			src: './src',
 			dest: './bin/src'
 		}
-
+	},
+	"string-replace": {
+		index: {
+			files: {
+				"bin/temp/": "./src/popup/index.html"
+			},
+			options: {
+				replacements: [{
+					pattern: /site\.js/g,
+					replacement: "site.min.js"
+				}]
+			}
+		}
 	}
 };
 
