@@ -5,7 +5,7 @@ Control caching behavior on the client side!
 
  * Override caching policy that has been set on the server.
  * Select a host on which the caching is required and all requests from a page with that host will be cached.
- * Caching of static content which are on a different host will also be cahed (_read Note for further explaination_)
+ * Caching of static content which are on a different host will also be cahed _(read Note for further explaination)_
  
 
 **Note:** say you have a site _example.com_ on which you have set a caching policy thru the extension.
