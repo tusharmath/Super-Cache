@@ -11,5 +11,6 @@ Control caching behavior on the client side!
 **Note:** say you have a site _example.com_ on which you have set a caching policy thru the extension.
 Now if the any page on _example.com_ links to external scripts and sites which are on a different domain such as static.example.com or ajax.googleapis.com, the extension will automatically apply the same caching behavior as that of _example.com_
 
+**Caution:** Caching takes up disk space, so use the extension carefully.
 
 Grab it from [Chrome Webstore](https://chrome.google.com/webstore/detail/super-cache/fglobbnbihckpkodmeefhagijjcjnbeh)
