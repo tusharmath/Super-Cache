@@ -1,16 +1,18 @@
-Super-Cache
-===========
 
-The Purpose of the application is to be able to cache static content of websites. Instead of changing the server side settings for caching this chrome-extension will allow you to cache the static content from the client side itself.
+# Super-Cache
+Control caching behavior on the client side!
 
-User can control what to cache in the following ways-
+## Features
 
-1. He can control the host on which he wants the caching to be enabled. Once the host is selected all the requests coming from that host will selected for caching.
+ * Override caching policy that has been set on the server.
+ * Select a host on which the caching is required and all requests from a page with that host will be cached.
+ * Caching of static content which are on a different host will also be cahed (_read Note for further explaination_)
+ 
 
-2. User can control specifically the things that he wants to be cached such as web pages, stylesheets, scripts and images.
+## Note  
 
-3. User can control caching for content that already have some caching behavior by overriding it.
+Say you have a site _example.com_ on which you have set a caching policy thru the extension.
+Now if the any page on _example.com_ links to external scripts and sites which are on a different domain such as static.example.com or ajax.googleapis.com, the extension will automatically apply the same caching behavior as that of _example.com_
 
 
-
-[Chrome Webstore](https://chrome.google.com/webstore/detail/super-cache/fglobbnbihckpkodmeefhagijjcjnbeh) 
+Grab it from [Chrome Webstore](https://chrome.google.com/webstore/detail/super-cache/fglobbnbihckpkodmeefhagijjcjnbeh) 
