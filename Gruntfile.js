@@ -26,8 +26,8 @@ var _config = {
 	uglify: {
 		dist: {
 			files: {
-				'bin/src/bg.min.js': ['src/background/*.js'],
-				'bin/src/site.min.js': ['src/popup/*.js']
+				'./bin/src/background/bg.min.js': ['src/background/*.js'],
+				'./bin/src/popup/site.min.js': ['src/popup/*.js']
 			}
 		}
 	},
@@ -41,7 +41,7 @@ var _config = {
 	"string-replace": {
 		index: {
 			files: {
-				"temp": "./src/popup/index.html"
+				"./bin/": "./src/popup/index.html"
 			},
 			options: {
 				replacements: [{
@@ -71,13 +71,16 @@ var _config = {
 };
 
 module.exports = function(grunt) {
+
+	grunt.file.delete('./bin');
+
 	grunt.initConfig(_config);
 	_config.pkg = grunt.file.readJSON('package.json');
 
 
 	grunt.loadNpmTasks('grunt-zip');
 	grunt.loadNpmTasks('grunt-release');
-	//grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	//grunt.loadNpmTasks('grunt-contrib-watch');
 	//grunt.loadNpmTasks('grunt-contrib-nodeunit');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -94,8 +97,7 @@ module.exports = function(grunt) {
 		srcContent.name = pkgContent.name;
 		srcContent.version = pkgContent.version;
 		srcContent.description = pkgContent.description;
-		srcContent.background.scripts = ['bg.min.js'];
-		srcContent.page_action.default_popup = 'index.html';
+		srcContent.background.scripts = ['background/bg.min.js'];
 
 		grunt.file.write(dest, JSON.stringify(srcContent));
 
