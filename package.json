@@ -19,6 +19,7 @@
     "grunt-contrib-watch": "*",
     "grunt-contrib-copy": "*",
     "grunt-string-replace": "*",
-    "grunt-release": "*"
+    "grunt-release": "*",
+    "grunt-contrib-uglify": "*"
   }
 }
