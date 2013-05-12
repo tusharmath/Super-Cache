@@ -36,7 +36,7 @@ var _config = {
 	"string-replace": {
 		index: {
 			files: {
-				"bin/temp/": "./src/popup/index.html"
+				"temp": "./src/popup/index.html"
 			},
 			options: {
 				replacements: [{
