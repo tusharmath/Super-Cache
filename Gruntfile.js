@@ -26,10 +26,11 @@ var _config = {
 	uglify: {
 		dist: {
 			files: {
-				'./bin/src/background/bg.min.js': ["src/background/HostsDb.js",
+				'./bin/src/background/bg.min.js': [
+					"src/background/UtilKeys.js",
+					"src/background/HostsDb.js",
 					"src/background/headersManipulator.js",
 					"src/background/SuperCacheLiveTabs.js",
-					"src/background/UtilKeys.js",
 					"src/background/ApplicationIcon.js",
 					"src/background/MainBackground.js"],
 				'./bin/src/popup/site.min.js': ['src/popup/*.js']
