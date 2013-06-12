@@ -13,6 +13,7 @@ var _config = {
 			src: ['./bin/src/manifest.json',
 				'./bin/src/background/bg.min.js',
 				'./bin/src/snapshots/*',
+				'./bin/src/popup/index.html',
 				'./bin/src/popup/site.min.js',
 				'./bin/src/popup/site.css'],
 			dest: _options.packageFile
