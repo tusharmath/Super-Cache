@@ -1,4 +1,6 @@
 # Super-Cache
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/tusharmath/Super-Cache.svg)](https://greenkeeper.io/)
 Control caching behavior on the client side!
 
 ## Features
